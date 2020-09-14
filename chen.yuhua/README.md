@@ -2,4 +2,5 @@
 
 ## Important links
 
-- http://yuhua.com/aau/wnm608/chen.yuhua
+- http://yuhua1024.com
+- http://yuhua1024.com/aau/wnm608/chen.yuhua
