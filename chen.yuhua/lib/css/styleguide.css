@@ -7,6 +7,9 @@
 	--color-neutral-medium:#999;
 	--color-neutral-dark:#444;
 
+	--color-black:#000;
+	--color-white:#fff;
+
 	--header-height:3rem;
 }
 
@@ -24,6 +27,9 @@ h5,
 h6{
 	font-family: Cambria, Georgia, "Times New Roman", serif;
 }
+
+
+ul,li{list-style:none;}
 
 a{
 	text-decoration: none;
@@ -57,6 +63,10 @@ a:hover{
 .flex-align-center{ align-items: center; }
 .flex-justify-center{ justify-content: center; }
 
+.flex-justify-space-around{
+	justify-content: space-around;
+}
+
 
 .navbar{
 	background-color:var(--color-neutral-dark);
@@ -71,3 +81,54 @@ a:hover{
 .navbar a{
 	padding:0 0.5em;
 }
+
+
+
+.view-window{
+	position:relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+
+	height: 80vh;
+}
+
+.card{
+	padding:1em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	position: relative;
+	overflow: hidden;
+}
+	.card.white{
+		background-color: var(--color-white);
+	}
+	.card.soft{
+		border-radius: 0.5em;
+		box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	}
+	.card.hard{
+		border-radius: 0.2em;
+		border:2px solid var(--color-neutral-dark);
+	}
+
+	.card.dark{
+		background-color: var(--color-neutral-dark);
+		color:var(--color-white);
+	}
+	.card.medium{
+		background-color: var(--color-neutral-medium);
+	}
+
+	.card.flat{
+		padding: 0;
+	}
+
+	.card.topandbottom{
+		border-top: 1.5px solid var(--color-neutral-dark);
+		border-bottom: 1.5px solid var(--color-neutral-dark);
+	}
+	.card.align-center{
+		text-align: center;
+	}
