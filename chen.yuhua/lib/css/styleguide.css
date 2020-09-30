@@ -132,3 +132,14 @@ a:hover{
 	.card.align-center{
 		text-align: center;
 	}
+
+
+
+.well{
+	padding: 0.5em;
+    background-color: var(--color-neutral-light);
+    margin: 1px;
+}
+.well .well{
+	background-color: var(--color-white);
+}

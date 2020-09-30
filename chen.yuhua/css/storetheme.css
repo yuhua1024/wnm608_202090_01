@@ -64,5 +64,9 @@ h3{
 }
 
 
+[class*='col-']>.well{
+	height:100%;
+}
+
 
 
