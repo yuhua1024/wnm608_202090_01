@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Style Guide</title>
+
+	<base href="/aau/wnm608/chen.yuhua/">
+	<link rel="stylesheet" href="lib/css/styleguide.css">
+	<link rel="stylesheet" href="lib/css/gridsystem.css">
+	<link rel="stylesheet" href="css/storetheme.css">
+
+	<link href="https://fonts.font.im/css?family=Open+Sans|Playfair+Display" rel="stylesheet">
+</head>
+<body>
+
+	<header class="navbar">
+		<div class="container display-flex flex-align-center">
+			<div class="flex-none"><h1>Style Guide</h1></div>
+		</div>
+
+	</header>
+
+	<nav class="container">
+		<div class="card soft">
+			<h2>Table of contents</h2>
+			<ul>
+				<li><a href="styleguide/#typography">Typography</a></li>
+				<li><a href="styleguide/#grid">Grid</a></li>
+				<ul>
+					<li><a href="styleguide/#typography">Typography</a></li>
+					<li><a href="styleguide/#basic-grid">Basic Grid</a></li>
+					<li><a href="styleguide/#complex-grid">Complex Grid</a></li>
+					<li><a href="styleguide/#responsive-grid">Responsive Grid</a></li>
+				</ul>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container" id="typography">
+		<div class="card soft">
+			<h2>Typoraphy</h2>
+			<h3>Heading</h3>
+			<div class="well">
+
+				<h1>Heading 1</h1>
+				<h2>Heading 2</h2>
+				<h3>Heading 3</h3>
+				<h4>Heading 4</h4>
+				<h5>Heading 5</h5>
+				<h6>Heading 6</h6>
+			</div>
+
+			<h3>Pragraphs</h3>
+			<div class="well">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Quas excepturi dolore non, inventore tempore nesciunt at, architecto tenetur, dolor vero quaerat maiores eaque illum ea esse dolorum sint! Ex dolore nemo perferendis amet vel exercitationem magnam inventore ratione odio, dolores voluptatibus vitae, odit expedita officia ullam. Saepe quae delectus placeat?</p>
+				<p>Mollitia fugiat excepturi voluptatem, non doloremque quam assumenda quidem suscipit velit accusamus possimus, quas dignissimos nulla voluptatibus optio, tempore sed laudantium sequi beatae repellendus. Labore quam aperiam nobis corporis vel quidem dolores, nam magni blanditiis. Corrupti deleniti, delectus odio. Assumenda repellendus aliquid dolore neque labore sequi sunt minus id alias!</p>
+				<p>Accusamus doloribus sapiente facilis repudiandae, iusto nulla, officia optio repellat assumenda sed deleniti? Esse hic, doloribus, cum delectus ad quia facilis earum dolorum dolor dolore, voluptatibus veritatis nostrum inventore illo velit. Minima, voluptatem quaerat ea amet quae facilis quidem nihil autem beatae doloribus adipisci, placeat quod delectus reprehenderit obcaecati assumenda.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" id="grid">
+		<div class="card soft" id="basic-grid">
+			<h2>Basic Grid</h2>
+
+			<div class="grid">
+				<div class="col-6"><div class="well">Column 6</div></div>
+				<div class="col-6"><div class="well">Column 6</div></div>
+			</div>
+
+			<div class="grid">
+				<div class="col-4"><div class="well">Column 4</div></div>
+				<div class="col-4"><div class="well">Column 4</div></div>
+				<div class="col-4"><div class="well">Column 4</div></div>
+			</div>
+
+			<div class="grid">
+				<div class="col-3"><div class="well">Column 3</div></div>
+				<div class="col-3"><div class="well">Column 3</div></div>
+				<div class="col-3"><div class="well">Column 3</div></div>
+				<div class="col-3"><div class="well">Column 3</div></div>
+			</div>
+
+			<div class="grid">
+				<div ></div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="container" id="complex-grid">
+		<div class="card soft">
+			<div>
+				<h2>Complex Grids</h2>
+			</div>
+			
+			<div class="grid">
+				<div class="col-6"><div class="well">Column 6</div></div>
+				<div class="col-6"><div class="well">Column 6</div></div>
+				<div class="col-3"><div class="well">Column 3</div></div>
+				<div class="col-6"><div class="well">Column 6</div></div>
+				<div class="col-3"><div class="well">Column 3</div></div>
+				<div class="col-12"><div class="well">Column 12</div></div>
+			</div>
+
+			<div class="grid">
+				<div class="col-6">
+					<div class="well">
+						<div class="grid">
+							<div class="col-3"><div class="well">Column 3</div></div>
+							<div class="col-3"><div class="well">Column 3</div></div>
+							<div class="col-3"><div class="well">Column 3</div></div>
+							<div class="col-3"><div class="well">Column 3</div></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="well">
+						<div class="grid">
+							<div class="col-4"><div class="well">Column 4</div></div>
+							<div class="col-4"><div class="well">Column 4</div></div>
+							<div class="col-4"><div class="well">Column 4</div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+
+
+
+	<div class="container" id="responsive-grid">
+		<div class="card soft">
+			<div>
+				<h2>Responsive Grids</h2>
+			</div>
+			<div class="grid">
+				<div class="col-xs-12 col-md-6">
+					<div class="well">Col 6</div>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<div class="well">Col 6</div>
+				</div>
+			</div>
+			<hr>
+			<div class="grid gap">
+				<div class="col-xs-6 col-md-3">
+					<div class="well">Col 6</div>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<div class="well">Col 6</div>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<div class="well">Col 6</div>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<div class="well">Col 6</div>
+				</div>
+			</div>
+			<hr>
+		</div>
+	</div>
+
+
+	
+		<div class="container"><h2>Navigation</h2></div>
+		<div class="navbar">
+			<div class=" container display-flex flex-align-center">
+				<div class="flex-none"><img src="img/logo_white.png" alt="" style="width: 60px;justify-content: center;align-items: center;display: grid;"></div>
+
+				<div class="flex-stretch"></div>	
+				<nav class="nav flex-none">
+					<ur class="display-flex">
+						<li><a href="">Home</a></li>
+						<li><a href="">Products</a></li>
+						<li><a href="">My Account</a></li>
+						<li><a href="">Cart</a></li>
+					</ur>
+				</nav>
+			</div>
+		</div>
+
+
+	<div class="container">
+		<h2>Categories</h2>
+		<div class="card white soft">
+			<div class="display-flex flex-justify-space-around grid">
+				<div class="card align-center col-sm-12 col-md-6 col-lg-3">
+					<img src="img/postcards_001.jpg" alt="" style="height: 200px;">
+					<a href="" class="button_categories" style="">Photographed</a>
+				</div>
+
+				<div class="card align-center col-sm-12 col-md-6 col-lg-3">
+					<img src="img/postcards_001.jpg" alt="" style="height: 200px;">
+					<a href="" class="button_categories">Painted</a>
+				</div>
+
+				<div class="card align-center col-sm-12 col-md-6 col-lg-3">
+					<img src="img/postcards_001.jpg" alt="" style="height: 200px;">
+					<a href="" class="button_categories">Handmade</a>
+				</div>
+
+				<div class="card align-center col-sm-12 col-md-6 col-lg-3">
+					<img src="img/postcards_001.jpg" alt="" style="height: 200px;">
+					<a href="" class="button_categories">Illustrator</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="container">
+		<h2>Buttons</h2>
+		<div class="card white soft display-flex flex-justify-space-around">
+			
+			<a href="" class="button01">Button</a>
+			<a href="" class="button02">Button</a>
+			<a href="" class="button03">Button</a>
+			<a href="" class="button04">Button</a>
+			<a href="" class="button05">Button</a>
+			<a href="" class="button06">Button</a>
+			
+		</div>
+	</div>
+
+	<div class="container">
+		<h2>Product List</h2>
+		<div class="card white soft display-flex flex-justify-space-around">
+			<div class="display-flex flex-justify-space-around grid">
+				<div class="card align-center col-sm-12 col-md-6 col-lg-3">
+					<img src="img/postcards_001.jpg" alt="" style="height: 200px;">
+					<h3>Postcards</h3>
+					<p>$1.00 / piece</p>
+					<a href="" class="button04">Shop Now</a>
+				</div>
+
+				<div class="card align-center col-sm-12 col-md-6 col-lg-3">
+					<img src="img/postcards_001.jpg" alt="" style="height: 200px;">
+					<h3>Postcards</h3>
+					<p>$1.00 / piece</p>
+					<a href="" class="button04">Shop Now</a>
+				</div>
+
+				<div class="card align-center col-sm-12 col-md-6 col-lg-3">
+					<img src="img/postcards_001.jpg" alt="" style="height: 200px;">
+					<h3>Postcards</h3>
+					<p>$1.00 / piece</p>
+					<a href="" class="button04">Shop Now</a>
+				</div>
+
+				<div class="card align-center col-sm-12 col-md-6 col-lg-3">
+					<img src="img/postcards_001.jpg" alt="" style="height: 200px;">
+					<h3>Postcards</h3>
+					<p>$1.00 / piece</p>
+					<a href="" class="button04">Shop Now</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	
+</body>
+</html>

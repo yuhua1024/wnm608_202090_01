@@ -1,12 +1,24 @@
 :root{
-	--color-neutral-light:#eee;
-	--color-neutral-medium:#999;
-	--color-neutral-dark:#000;
+	--color-neutral-light:#e8e8e8;
+	--color-neutral-medium:#848484;
+	--color-neutral-dark:#938282;
+
+	--color-main-light:#EFEDED;
+	--color-main-medium:#CEC1BF;
+	--color-main-dark:#A59695;
+
+	--color-alt-light:#E0E0E0;
+	--color-alt-medium:#C2C3C0;
+	--color-alt-dark:#858781;
+
+	--color-warning:;
+	--color-error:;
+	--color-purchase:;
 }
 
 body{
-	font-family: Calibri,sans serif;
-	background-color: #f9f9f9;
+	font-family: 'Open Sans', sans-serif;
+	background-color: var(--color-main-light);
 }
 
 .view-window h2{
@@ -37,30 +49,162 @@ body{
 }
 
 
-.button{
-	background-color: var(--color-black);
-	border: none;
-	border-radius: 0.2em;
-	color: var(--color-white);
-	font-family: Helvetica, Arial, sans-serif;
-	font-size: 100%;
+.button01{
+	background-color: var(--color-main-dark);
+	color: var(--color-main-light);
 	padding-left: 1.2em;
 	padding-right: 1.2em;
-	padding-top: 0.3em;
-	padding-bottom: 0.3em;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+	border: none;
+	border-radius: 0.2em;
+	font-family: 'Playfair Display', serif;
+	font-size: 100%;
+	display: grid; 
+	justify-content: center; 
+	align-items: center;
+	position: relative;
 }
 
-.button: hover{
-	text-decoration: underline;
-	color: var(--color-white);
+.button01:hover{
+	background-color: var(--color-main-light);
+	color: var(--color-main-dark);
 }
 
-h2{
-	font-size: 2em;
+.button02{
+	background-color: var(--color-main-light);
+	color: var(--color-main-dark);
+	padding-left: 1.2em;
+	padding-right: 1.2em;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+	border: none;
+	border-radius: 0.2em;
+	font-family: 'Playfair Display', serif;
+	font-size: 100%;
+	display: grid; 
+	justify-content: center; 
+	align-items: center;
+	position: relative;
 }
 
-h3{
-	font-size: 1em;
+.button02:hover{
+	background-color: var(--color-main-dark);
+	color: var(--color-main-light);
+}
+
+
+.button03{
+	background-color: var(--color-alt-dark);
+	color: var(--color-alt-light);
+	padding-left: 1.2em;
+	padding-right: 1.2em;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+	border: none;
+	border-radius: 0.2em;
+	font-family: 'Playfair Display', serif;
+	font-size: 100%;
+	display: grid; 
+	justify-content: center; 
+	align-items: center;
+	position: relative;
+}
+
+.button03:hover{
+	background-color: var(--color-alt-light);
+	color: var(--color-alt-dark);
+}
+
+.button04{
+	background-color: var(--color-alt-light);
+	color: var(--color-alt-dark);
+	padding-left: 1.2em;
+	padding-right: 1.2em;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+	border: none;
+	border-radius: 0.2em;
+	font-family: 'Playfair Display', serif;
+	font-size: 100%;
+	display: grid; 
+	justify-content: center; 
+	align-items: center;
+	position: relative;
+}
+
+.button04:hover{
+	background-color: var(--color-alt-dark);
+	color: var(--color-alt-light);
+}
+
+.button05{
+	background-color: var(--color-main-light);
+	border: 1px solid #A59695;
+	color: var(--color-main-dark);
+	padding-left: 1.2em;
+	padding-right: 1.2em;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+	border-radius: 0.2em;
+	font-family: 'Playfair Display', serif;
+	font-size: 100%;
+	display: grid; 
+	justify-content: center; 
+	align-items: center;
+	position: relative;
+}
+
+.button05:hover{
+	background-color: var(--color-main-dark);
+	color: var(--color-main-light);
+}
+
+
+
+.button06{
+	background-color: var(--color-alt-light);
+	border: 1px solid #858781;
+	color: var(--color-alt-dark);
+	padding-left: 1.2em;
+	padding-right: 1.2em;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+	border-radius: 0.2em;
+	font-family: 'Playfair Display', serif;
+	font-size: 100%;
+	display: grid; 
+	justify-content: center; 
+	align-items: center;
+	position: relative;
+}
+
+.button06:hover{
+	background-color: var(--color-alt-dark);
+	color: var(--color-alt-light);
+}
+
+
+.button_categories{
+	background-color: var(--color-alt-light);
+	color: var(--color-alt-dark);
+	font-family: 'Playfair Display', serif;
+	height: 50px; 
+	width: 150px; 
+	font-size: 100%;
+	display: grid; 
+	justify-content: center; 
+	align-items: center;
+	position: relative;
+	left: 30px;
+	bottom: 28px;
+	border-radius: 0.5em;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.button_categories:hover{
+	background-color: var(--color-alt-dark);
+	color: var(--color-alt-light);
 }
 
 
