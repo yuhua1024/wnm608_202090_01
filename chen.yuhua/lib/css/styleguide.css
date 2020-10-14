@@ -66,6 +66,48 @@ a:hover{
 .flex-justify-space-around{
 	justify-content: space-around;
 }
+.flex-justify-space-between{
+	justify-content: space-between;
+}
+
+
+.nav ul{
+	list-style-type: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+}
+
+	.nav a{
+		display: block;
+		padding: 0.2em 0.5em;
+	}
+
+	.nav a:hover{
+		background-color: var(--color-main-medium);
+		color: var(--color-white);
+		text-decoration: none;
+	}
+	.nav.crumbs ul,
+	.nav.pills ul,
+	.nav.stretch ul,
+	.nav.flex ul{
+		display: flex;
+	}
+	.nav.stretch li{
+		flex: 1 1 auto;
+		text-align: center;
+	}
+	.nav.pills a{
+		border-radius: 2em;
+		padding:0.5em 1em;
+	}
+	.nav.crumbs a{
+		display: inline-block;
+	}
+	.nav.crumbs li:not(:first-child)::before{
+		content:'/';
+	}
 
 
 .navbar{
@@ -132,15 +174,201 @@ a:hover{
 	.card.align-center{
 		text-align: center;
 	}
+	.card.rainbow {
+    	background-image: linear-gradient(-45deg,#ffaac1,#e8fb8f,#a0a0f6);
+	}
 
 
 
 .well{
 	padding: 0.5em;
-    background-color: var(--color-white);
+    background-color: var(--color-neutral-light);
     margin: 1px;
 }
 .well .well{
-	background-color: var(--color-main-light);
+	background-color: var(--color-white);
 }
 
+.table{
+	width: 100%;
+	border-collapse: collapse;
+}
+.table td,
+.table th{
+	text-align: left;
+	padding: 0.2em 0.5em;
+}
+
+.form-input{
+	display: inline-block;
+	width: 100%;
+	border-width: 0;
+	background-color: transparent;
+	font:inherit;
+	padding-top: 0.5em 1em;
+	border-bottom: 1px solid var(--color-neutral-medium);
+	outline: 0;
+}
+
+.form-label{
+	font-size: 0.8em;
+	color: var(--color-neutral-medium);
+}
+
+.form-control{
+	margin: 1em 0;
+}
+.form-control input{
+	font-size: 0.8em;
+	transition: 80%;
+}
+
+.btn,
+.form-button{
+	display: inline-block;
+	width: 100%;
+	border-width: 0;
+	font:inherit;
+	border-radius: 0.3em;
+	padding: 0.5em 1em;
+	background-color: var(--color-neutral-light);
+	text-align: center;
+	text-decoration: none;
+	cursor:pointer;
+	outline:0;
+}
+
+.btn:hover,
+.form-button:hover{
+	text-decoration: none;
+	background-color: var(--color-neutral-dark);
+	color: var(--color-neutral-light);
+}
+
+	.btn.inline{
+		width: initial;
+	}
+	.btn.sell{
+		background-color: var(--color-purchase);
+	}
+
+	.btn.purchase{
+		background-color: var(--color-purchase);
+		color: var(--color-white);
+	}
+	.btn.addtocart{
+		background-color: var(--color-white);
+		border: 1px solid var(--color-purchase);
+		color: var(--color-purchase);
+	}
+
+	.btn.purchase:hover{
+		text-decoration: underline;
+		box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	}
+
+	.btn.addtocart:hover{
+		text-decoration: underline;
+		box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	}
+
+
+
+
+.hotdog{
+	display: flex;
+	width: 100%;
+	padding: 0.5em 1.5em;
+	border-radius: 2em;
+	font:inherit;
+	background-color: var(--color-neutral-light);
+	border-width: 0;
+	outline: 0;
+}
+
+	.hotdog.dark{
+		background-color: var(--color-main-dark);
+		color: var(--color-main-light);
+	}
+	.hotdog input{
+		background-color: transparent;
+		border-width: 0;
+		flex: 1 1 100%;
+		outline: 0;
+		font: inherit;
+	}
+
+
+
+
+.icon{
+	position: relative;
+    width: 1em;
+    height: 1em;
+    bottom: -0.2em;
+}
+
+
+.form-select>select{
+	padding: 0.5em 1em;
+	background-color: var(--color-main-light);
+	border-width: 0;
+	border-radius: 0.3em;
+	cursor: pointer;
+	appearance:none;   
+  	-moz-appearance:none;   
+	--webkit-appearance:none;
+	display: inline-block;
+	width: 100%;
+	font:inherit;
+	outline: 0;
+}
+.form-select{
+	position: relative;
+    margin: 1em 0;
+}
+.form-select::after{
+	position: absolute;
+	content: '▼';
+	font-size: 0.9em;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0.5em;
+	pointer-events: none;
+	color:var(--color-main-dark);
+}
+
+
+.toggle label{
+	display: inline-block;
+	width: 2em;
+	height: 1em;
+	background-color: var(--color-main-light);
+	border:0.1em solid var(--color-main-medium);
+	border-radius: 1em;
+	position: relative;
+	font-size: 1.3em;
+}
+
+.toggle label::after{
+	content: '';
+	position: absolute;
+	width: 0.8em;
+	height: 0.8em;
+	display: inline-block;
+	border-radius: 1em;
+	background-color: var(--color-white);
+	transition: all 0.3s;
+	box-shadow: 0 0 2px rgba(0,0,0,0.4);
+}
+
+.toggle input:checked + label::after{
+	transform: translateX(1em);
+}
+
+.navbar img{
+	width: 60px;
+	justify-content: center;
+	align-items: center;
+	display: grid;
+}
