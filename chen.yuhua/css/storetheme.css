@@ -5,7 +5,7 @@
 
 	--color-main-light:#EFEDED;
 	--color-main-medium:#CEC1BF;
-	--color-main-dark:#A59695;
+	--color-main-dark:#938282;
 
 	--color-alt-light:#E0E0E0;
 	--color-alt-medium:#C2C3C0;
@@ -213,12 +213,14 @@ body{
 .product-price{
 	font-family: 'Open Sans', sans-serif; 
 	padding: 0 0 0.5em 0;
+	font-weight: 1em;
 }
 
 .product-title{
 	font-family: 'Playfair Display', serif;
 	font-size: 1.2em;
 	padding: 0.5em 0;
+	font-weight: 1em;
 }
 
 .product-item:hover .button04{

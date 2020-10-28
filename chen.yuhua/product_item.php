@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 	<title>Product Item</title>
 
 	<?php include "parts/meta.php" ?>
@@ -13,7 +12,6 @@
 	<div class="container">
 		<div class="card soft white">
 			<h2>Product Item</h2>
-			<div>This is the product #<?= $_GET['id'] ?></div>
 	</div>
 
 </body>

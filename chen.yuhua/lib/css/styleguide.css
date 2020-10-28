@@ -71,6 +71,9 @@ a:hover{
 }
 
 
+.text-align-center{text-align: center;}
+
+
 .nav ul{
 	list-style-type: none;
 	margin-top: 0;
@@ -281,7 +284,7 @@ a:hover{
 	padding: 0.5em 1.5em;
 	border-radius: 2em;
 	font:inherit;
-	background-color: var(--color-neutral-light);
+	background-color: var(--color-white);
 	border-width: 0;
 	outline: 0;
 }
@@ -311,7 +314,7 @@ a:hover{
 
 .form-select>select{
 	padding: 0.5em 1em;
-	background-color: var(--color-main-light);
+	background-color: var(--color-white);
 	border-width: 0;
 	border-radius: 0.3em;
 	cursor: pointer;
@@ -372,3 +375,37 @@ a:hover{
 	align-items: center;
 	display: grid;
 }
+
+
+
+.footer{
+	background-color: var(--color-main-dark);
+	height: 320px;
+
+}
+.footer_1{
+	
+	display:flex;
+	color: var(--color-main-light);
+	justify-content: space-between;
+	font-size: 0.8em;
+}
+.form-control-subscribe{
+	margin: 1em 0;
+	font-size: 0.8em;
+	color: var(--color-neutral-light);
+}
+.form-label-subscribe{
+	font-size: 1.2em;
+	color: var(--color-main-light);
+}
+.form-input-subscribe{
+	display: inline-block;
+	width: 80%;
+	border-width: 0;
+	background-color: var(--color-main-light);
+	font:inherit;
+	outline: 0;
+	padding: 0.5em 0.5em;
+}
+
