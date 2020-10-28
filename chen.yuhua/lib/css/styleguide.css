@@ -152,15 +152,15 @@ a:hover{
 	}
 	.card.hard{
 		border-radius: 0.2em;
-		border:2px solid var(--color-neutral-dark);
+		border:2px solid var(--color-main-dark);
 	}
 
 	.card.dark{
-		background-color: var(--color-neutral-dark);
+		background-color: var(--color-main-dark);
 		color:var(--color-white);
 	}
 	.card.medium{
-		background-color: var(--color-neutral-medium);
+		background-color: var(--color-main-medium);
 	}
 
 	.card.flat{
@@ -175,14 +175,14 @@ a:hover{
 		text-align: center;
 	}
 	.card.rainbow {
-    	background-image: linear-gradient(-45deg,#ffaac1,#e8fb8f,#a0a0f6);
+    	background-image: linear-gradient(-45deg,#E0E0E0,#858781,#E0E0E0);
 	}
 
 
 
 .well{
 	padding: 0.5em;
-    background-color: var(--color-neutral-light);
+    background-color: var(--color-main-light);
     margin: 1px;
 }
 .well .well{
@@ -212,15 +212,15 @@ a:hover{
 
 .form-label{
 	font-size: 0.8em;
-	color: var(--color-neutral-medium);
+	color: var(--color-main-dark);
 }
 
 .form-control{
 	margin: 1em 0;
 }
 .form-control input{
-	font-size: 0.8em;
-	transition: 80%;
+	font-size: 0.6em;
+	color: var(--color-neutral-light);
 }
 
 .btn,
