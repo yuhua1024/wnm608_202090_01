@@ -6,8 +6,8 @@
             <ur class="display-flex">
                <li><a href="index.php">Home</a></li>
                <li><a href="product_list.php">Products</a></li>
-               <li><a href="">My Account</a></li>
-               <li><a href="cart.php">Cart</a></li>
+               <li><a href="about_us.php">About Us</a></li>
+               <li><a href="product_cart.php">Cart</a></li>
             </ur>
          </nav>   
       </div>

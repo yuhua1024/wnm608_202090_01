@@ -12,5 +12,7 @@
 	<?php include "parts/filter_search.php" ?>
 
 	<?php include "parts/product_list.php" ?>
+
+	<?php include "parts/footer.php" ?>
 </body>
 </html>

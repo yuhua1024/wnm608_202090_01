@@ -11,9 +11,12 @@
 
 	<div class="container">
 		<div class="card soft white ">
-			<?php include "parts/product_item_title.php" ?>
+			<h1>You have added it to your cart!</h1>
 
-			<?php include "parts/product_item_description.php" ?>
+			<div class="display-flex product_button">
+				<a href="product_item.php" class="btn addtocart">Back to shopping</a>
+				<a href="product_cart.php" class="btn purchase">Go to my cart</a>
+			</div>
 		</div>
 	</div>
 

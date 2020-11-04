@@ -9,7 +9,7 @@
 						</div>
 						<figcaption class="product-description">
 						</figcaption>
-						<a href="#" class="button04">Photographed</a>
+						<a href="product_list.php" class="button04">Photographed</a>
 					</figure>
 				</a>
 			</div>
@@ -23,7 +23,7 @@
 						</div>
 						<figcaption class="product-description">
 						</figcaption>
-						<a href="#" class="button04">Graphic</a>
+						<a href="product_list.php" class="button04">Graphic</a>
 					</figure>
 				</a>
 			</div>
@@ -37,7 +37,7 @@
 						</div>
 						<figcaption class="product-description">
 						</figcaption>
-						<a href="#" class="button04">Handmade</a>
+						<a href="product_list.php" class="button04">Handmade</a>
 					</figure>
 				</a>
 			</div>
@@ -51,7 +51,7 @@
 						</div>
 						<figcaption class="product-description">
 						</figcaption>
-						<a href="#" class="button04">Illustration</a>
+						<a href="product_list.php" class="button04">Illustration</a>
 					</figure>
 				</a>
 			</div>
