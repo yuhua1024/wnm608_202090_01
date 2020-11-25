@@ -2,7 +2,7 @@
 
 include_once "lib/php/functions.php";
 include_once "parts/templates.php";
-$cart = getCartItems();
+$cart = purchaseNow();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +19,7 @@ $cart = getCartItems();
 		
 		<?
 
-         	echo array_reduce($cart,'makeCartList');
+         	echo array_reduce($cart,'makeSingleCartList');
 
         ?>
 

@@ -7,9 +7,7 @@
 		</ul>
 		<div class="contents">
 			<div class="content active">
-				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore obcaecati recusandae, exercitationem praesentium nisi ratione rerum expedita quam reprehenderit quis? Ut totam sit quam voluptas adipisci expedita illum! Omnis reprehenderit a beatae fugit minima, accusantium eum eius quisquam praesentium nemo.</p>
-				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore obcaecati recusandae, exercitationem praesentium nisi ratione rerum expedita quam reprehenderit quis? Ut totam sit quam voluptas adipisci expedita illum! Omnis reprehenderit a beatae fugit minima, accusantium eum eius quisquam praesentium nemo.</p>
-				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore obcaecati recusandae, exercitationem praesentium nisi ratione rerum expedita quam reprehenderit quis? Ut totam sit quam voluptas adipisci expedita illum! Omnis reprehenderit a beatae fugit minima, accusantium eum eius quisquam praesentium nemo.</p>
+				<p><?= $product->description ?></p>
 			</div>
 				
 

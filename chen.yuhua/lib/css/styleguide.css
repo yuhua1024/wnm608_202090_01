@@ -170,6 +170,14 @@ a:hover{
 		padding: 0;
 	}
 
+	.card-section~.card-section{
+		border-top: 1px solid var(--color-neutral-medium);
+	}
+	.card-section {
+      padding:1em;
+   }
+
+
 	.card.topandbottom{
 		border-top: 1.5px solid var(--color-neutral-dark);
 		border-bottom: 1.5px solid var(--color-neutral-dark);
@@ -223,7 +231,7 @@ a:hover{
 }
 .form-control input{
 	font-size: 0.6em;
-	color: var(--color-neutral-light);
+	color: var(--color-neutral-medium);
 }
 
 .btn,
@@ -234,7 +242,7 @@ a:hover{
 	font:inherit;
 	border-radius: 0.3em;
 	padding: 0.5em 1em;
-	background-color: var(--color-neutral-light);
+	background-color: var(--color-main-light);
 	text-align: center;
 	text-decoration: none;
 	cursor:pointer;
@@ -244,8 +252,8 @@ a:hover{
 .btn:hover,
 .form-button:hover{
 	text-decoration: none;
-	background-color: var(--color-neutral-dark);
-	color: var(--color-neutral-light);
+	background-color: var(--color-main-dark);
+	color: var(--color-main-light);
 }
 
 	.btn.inline{
@@ -259,18 +267,19 @@ a:hover{
 		background-color: var(--color-purchase);
 		color: var(--color-white);
 		margin-left:1em; 
+		margin-top: 2em;
 	}
 	.btn.addtocart{
 		background-color: var(--color-white);
 		border: 1px solid var(--color-purchase);
 		color: var(--color-purchase);
 		margin-right: 1em;
+		margin-top: 2em;
 	}
 
 	.btn.purchase:hover{
 		text-decoration: underline;
 		box-shadow: 0 0 10px rgba(0,0,0,0.3);
-		
 	}
 
 	.btn.addtocart:hover{
@@ -318,7 +327,7 @@ a:hover{
 
 .form-select>select{
 	padding: 0.5em 1em;
-	background-color: var(--color-white);
+	background-color: var(--color-main-light);
 	border-width: 0;
 	border-radius: 0.3em;
 	cursor: pointer;
@@ -374,7 +383,7 @@ a:hover{
 }
 
 .navbar img{
-	width: 60px;
+	height:30px;
 	justify-content: center;
 	align-items: center;
 	display: grid;

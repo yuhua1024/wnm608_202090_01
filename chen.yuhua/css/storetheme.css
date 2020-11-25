@@ -379,3 +379,54 @@ body{
 	margin-top: 1em;
 	margin-bottom: 1em;
 }
+
+.product-image {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 100%;
+}
+
+.image-main{
+	position: relative;
+	height: 0;
+	overflow:hidden;
+	padding-bottom:80%;
+}
+.image-main img,
+.product-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-thumbs{
+	margin-top: 1em;
+}
+.image-thumbs img {
+  width:20%;
+  height:20%;
+  object-fit:cover;
+}
+
+.badge:not(:empty){
+	background-color: red;
+    border-radius: 10px;
+    width: 15px;
+    height: 15px;
+    top: 10px;
+    position: absolute;
+    text-align: center;
+}
+
+
+
+@media (max-width:600px) {
+  h2 {
+    font-size:1em;
+  }
+}
+

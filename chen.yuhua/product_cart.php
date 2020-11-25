@@ -1,3 +1,14 @@
+
+<?php
+
+include_once "lib/php/functions.php";
+include_once "parts/templates.php";
+$cart = getCartItems();
+
+//print_p($cart);
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,15 +23,23 @@
 	<?php include "parts/filter_search.php" ?>
 
 	<div class="container">
+		<div class="card soft white">
+        	<h2>Product Cart</h2>
 		
-			<div><?php include "parts/cart_selecter.php" ?></div>
-			<div><?php include "parts/cart_selecter.php" ?></div>
-			<div><?php include "parts/cart_selecter.php" ?></div>
-		
+			<?
+
+         		echo array_reduce($cart,'makeCartList');
+
+        	?>
+
+		</div>
 
 		<div class="card display-flex grid gap" >
-			<h3>Total: $2.97</h3>
-			<a href="purchase.php" class="btn purchase sm-col-2" >Check Out</a>
+			
+			</div>
+               <?= cartTotals() ?>
+            </div>
+			<a href="purchase.php" class="btn purchase sm-col-6" >Check Out</a>
 		</div>
 
 

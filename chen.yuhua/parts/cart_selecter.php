@@ -35,4 +35,6 @@
 		<div class="cart-product-price">
 			<h3>$0.99</h3>
 		</div>
+
+		
 	</div>

@@ -2,7 +2,7 @@
 		<div class="grid gap card white soft category">
 			
 			<div class="col-sm-6 col-md-6 col-lg-3">
-				<a href="#">
+				<a href="product_list.php">
 					<figure class="category-item">
 						<div class="category-image">
 							<img src="img/postcards_001.jpg">
@@ -16,7 +16,7 @@
 
 
 				<div class="col-sm-6 col-md-6 col-lg-3">
-				<a href="#">
+				<a href="product_list.php">
 					<figure class="category-item">
 						<div class="category-image">
 							<img src="img/postcards_001.jpg">
@@ -30,7 +30,7 @@
 
 
 			<div class="col-sm-6 col-md-6 col-lg-3">
-				<a href="#">
+				<a href="product_list.php">
 					<figure class="category-item">
 						<div class="category-image">
 							<img src="img/postcards_001.jpg">
@@ -44,7 +44,7 @@
 
 
 			<div class="col-sm-6 col-md-6 col-lg-3">
-				<a href="#">
+				<a href="product_list.php">
 					<figure class="category-item">
 						<div class="category-image">
 							<img src="img/postcards_001.jpg">
