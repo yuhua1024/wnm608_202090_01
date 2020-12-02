@@ -19,15 +19,19 @@ $cart = getCartItems();
 		
 		<?
 
-         	echo array_reduce($cart,'makeCartList');
+         	echo array_reduce($cart,'makePurchaseList');
 
         ?>
 
 	</div>
 
-	<?php include "parts/purchase_infor.php" ?>
+		<div class="container">
 
-	<a href="product_actions.php?action=reset-cart"><div class="btn purchase">Present Order</div></a>
+		<?php include "parts/purchase_infor.php" ?>
+
+		<a href="product_actions.php?action=reset-cart"><div class="btn purchase">Present Order</div></a>
+
+	</div>
 
 </body>
 </html>

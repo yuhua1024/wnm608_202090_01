@@ -1,4 +1,4 @@
-
+ 
 <?php
 
 include_once "lib/php/functions.php";
@@ -20,8 +20,6 @@ $cart = getCartItems();
 
 	<?php include "parts/navbar.php" ?>
 
-	<?php include "parts/filter_search.php" ?>
-
 	<div class="container">
 		<div class="card soft white">
         	<h2>Product Cart</h2>
@@ -39,7 +37,6 @@ $cart = getCartItems();
 			</div>
                <?= cartTotals() ?>
             </div>
-			<a href="purchase.php" class="btn purchase sm-col-6" >Check Out</a>
 		</div>
 
 

@@ -2,23 +2,7 @@
 
 
 
-function makeProductList($r,$o) {
-return $r.<<<HTML
-<div class="col-xs-12 col-md-4">
-   <a href="product_item.php?id=$o->id" class="product-item">
-      <figure>
-         <div class="product-image">
-            <img src="/images/store/$o->image_thumb" alt="">
-         </div>
-         <figcaption class="product-description">
-            <div class="product-price">&dollar;$o->price</div>
-            <div class="product-title">$o->title</div>
-         </figcaption>
-      </figure>
-   </a>
-</div>
-HTML;
-}
+
 
 
 
@@ -33,10 +17,21 @@ function selectAmount($amount=1,$total=10) {
 }
 
 
+function selectColor($color=color1,$total=color4) {
+   $output = "<select name='product-color'>";
+   for($i=color1;$i<=$total;$i++) {
+      $output .= "<option ".($i==$colorcolor?'selected':'').">$i</option>";
+   }
+   $output .= "</select>";
+   return $output;
+}
+
+
 
 function makeCartList($r,$o) {
 $totalfixed = number_format($o->total,2,'.','');
 $selectamount = selectAmount($o->amount,10);
+$selectcolor = selectColor($o->color,4);
 return $r.<<<HTML
 <div class="display-flex">
    <div class="flex-none image-thumbs">
@@ -44,18 +39,22 @@ return $r.<<<HTML
    </div>
    <div class="flex-stretch">
       <strong>$o->name</strong>
+
+      <div>Color:$o->color</div>
+
       <form action="product_actions.php?action=delete-cart-item" method="post">
          <input type="hidden" name="product-id" value="$o->id">
          <input type="submit" value="Delete" class="button04" style="font-size:0.8em">
       </form>
+      
    </div>
    <div class="flex-none">
       <div>&dollar;$totalfixed</div>
       <form action="product_actions.php?action=update-cart-item" method="post" onchange="this.submit()">
-         <input type="hidden" name="product-id" value="$o->id">
-         <div class="form-select">
+         <div class="form-select-light">
             $selectamount
          </div>
+         <input type="hidden" name="product-id" value="$o->id">
       </form>
    </div>
 </div>
@@ -63,6 +62,30 @@ HTML;
 }
 
 function makeSingleCartList($r,$o) {
+$selectamount = selectAmount($o->amount,10);
+return $r.<<<HTML
+<div class="display-flex">
+   <div class="flex-none image-thumbs">
+      <img src="img/store/$o->image_thumb" style="width: 100px;height: 100px;">
+   </div>
+   <div class="flex-stretch">
+      <strong>$o->name</strong>
+      <form action="product_actions.php?action=delete-cart-item" method="post">
+         <input type="hidden" name="product-id" value="$o->id">
+      </form>
+   </div>
+   <div class="flex-none">
+      <div>&dollar;$totalfixed</div>
+      <form action="product_actions.php?action=update-cart-item" method="post" onchange="this.submit()">
+         <input type="hidden" name="product-id" value="$o->id">
+         <div>Amount:$o->amount</div>
+      </form>
+   </div>
+</div>
+HTML;
+}
+
+function makePurchaseList($r,$o) {
 $totalfixed = number_format($o->total,2,'.','');
 $selectamount = selectAmount($o->amount,10);
 return $r.<<<HTML
@@ -74,16 +97,13 @@ return $r.<<<HTML
       <strong>$o->name</strong>
       <form action="product_actions.php?action=delete-cart-item" method="post">
          <input type="hidden" name="product-id" value="$o->id">
-         <input type="submit" value="Delete" class="button04" style="font-size:0.8em">
       </form>
    </div>
    <div class="flex-none">
       <div>&dollar;$totalfixed</div>
       <form action="product_actions.php?action=update-cart-item" method="post" onchange="this.submit()">
          <input type="hidden" name="product-id" value="$o->id">
-         <div class="form-select">
-            $selectamount
-         </div>
+         <div>Amount:$o->amount</div>
       </form>
    </div>
 </div>
@@ -113,7 +133,7 @@ return <<<HTML
    <div class="flex-none">&dollar;$taxed</div>
 </div>
 <div class="card-section">
-   <a href="purchase.php" class="form-button">Checkout</a>
+   <a href="purchase.php" class="btn purchase">Checkout</a>
 </div>
 HTML;
 }

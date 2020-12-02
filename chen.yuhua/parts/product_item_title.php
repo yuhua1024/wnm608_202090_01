@@ -24,9 +24,10 @@ $product = MYSQLIQuery("SELECT * FROM products WHERE id = {$_GET['id']}")[0];
 				
 				</div>
           <div class="display-flex card-section">
-    				<div class="col-sm-3">
+
+    				<div class="product-select" style="width: 47%; margin-right: 1em; margin-left: 0;">
               <label for="product-amount">Amount</label>
-              <div class="form-select">
+              <div class="form-select-light">
                 <select name="product-amount" id="product-amount">
                   <!-- option[value=$]*10>{$} -->
                   <option value="1">1</option>
@@ -43,21 +44,22 @@ $product = MYSQLIQuery("SELECT * FROM products WHERE id = {$_GET['id']}")[0];
               </div>
             </div>
 
-            <div class="col-sm-3">
+            <div class="product-select" style="width: 47%; margin-right: 0; margin-left: 0;">
               <label for="product-color">Color</label>
-              <div class="form-select">
+              <div class="form-select-light">
                 <select name="product-color" id="product-color">
-                  <option value="red">Red</option>
-                  <option value="green">Green</option>
-                  <option value="blue">Blue</option>
-                 </select>
+                  <option value="color1">#1</option>
+                  <option value="color2">#2</option>
+                  <option value="color3">#3</option>
+                  <option value="color4">#4</option>
+                </select>
               </div>
             </div>
-        </div>
+
+          </div>
 
 				<div class="card-section display-flex">
 					<input type="submit" class="btn addtocart" value="Add To Cart">
-					<a href="purchasenow.php" class="btn purchase">Purchase Now</a>
 				</div>
 				
 			</form>

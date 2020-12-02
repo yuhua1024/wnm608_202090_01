@@ -1,6 +1,45 @@
 <?php
 
 include_once "lib/php/functions.php";
+include_once "parts/templates.php";
+include_once "data/api.php";
+
+setDefault('s','');
+setDefault('t','products_all');
+setDefault('orderby_direction','DESC');
+setDefault('orderby','sales_volume');
+setDefault('limit','16');
+
+
+
+function makeSortOptions() {
+   $options = [
+   	  ["sales_volume","DESC","Bestselling"],
+      ["date_create","DESC","Newst"],
+      ["price","DESC","Price high to low"],
+      ["price","ASC","Price low to high"]
+   ];
+   foreach($options as [$orderby,$direction,$title]) {
+      echo "
+      <option data-orderby='$orderby' data-direction='$direction'
+      ".($_GET['orderby']==$orderby && $_GET['orderby_direction']==$direction ? "selected" : "").">
+      $title
+      </option>
+      ";
+   }
+}
+
+function makeHiddenValues($arr1,$arr2) {
+   foreach(array_merge($arr1,$arr2) as $k=>$v) {
+      echo "<input type='hidden' name='$k' value='$v'>\n";
+   }
+}
+
+
+
+$result = makeStatement($_GET['t']);
+$products = isset($result['error']) ? [] : $result;
+
 
 
 function makeProductList($r,$o) {
@@ -40,5 +79,7 @@ HTML;
 	<?php include "parts/product_list.php" ?>
 
 	<?php include "parts/footer.php" ?>
+
+<script src="js/store.js"></script>
 </body>
 </html>
