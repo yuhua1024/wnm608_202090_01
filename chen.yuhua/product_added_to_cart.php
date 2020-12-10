@@ -6,6 +6,7 @@ $product = MYSQLIQuery("SELECT * FROM `products` WHERE `id` = ".$_GET['id'])[0];
 $cart_product = cartItemById($_GET['id']);
 
 
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

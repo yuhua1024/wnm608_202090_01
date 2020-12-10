@@ -41,8 +41,8 @@ HTML;
 
 	<div class="container">
 		<div class="card text-align-center">
-			<h2>This is a heading 2</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ipsum similique culpa beatae iste nostrum fugiat itaque et voluptate. Quo, alias accusantium. Saepe dignissimos architecto, maiores. Dicta laudantium illum quasi explicabo ut a debitis labore fugit neque alias qui dolorum dignissimos provident nam, dolore maiores in deserunt voluptatibus quod! Aliquam.</p>
+			<h2>ABOUT US</h2>
+			<p>This is a website selling many kinds of postcards. Some of the postcards are photography, some are illustrated, and some are collage. The photography and collage are created by myself. We provides customers the opportunity to choose postcards entirely on your own preferences, not necessarily in sets, although they are in sets originally.</p>
 		</div>
 	</div>
 

@@ -70,12 +70,12 @@ $createorupdate = $id=='new' ? 'create' : 'update';
 
 
 $userdata = $id=='new' ? '' : <<<HTML
-<div class="card soft">
+<div class="card soft white">
    <div class="display-flex">
       <h2 class="flex-stretch">$user->name</h2>
       <div>
          <a href="{$_SERVER['PHP_SELF']}?id=$id&crud=delete">
-            <img src="img/icons/trash.svg" class="icon">
+            <img src="img/icon/trash.png" class="icon">
          </a>
       </div>
    </div>
@@ -95,17 +95,15 @@ $userdata = $id=='new' ? '' : <<<HTML
 HTML;
 
 echo <<<HTML
-<div class="card soft">
-<nav class="nav crumbs">
-   <ul>
-      <li><a href="{$_SERVER['PHP_SELF']}">Back</a></li>
-   </ul>
-</nav>
+
+<div class="card">
+   <li><a href="{$_SERVER['PHP_SELF']}">< Back </a></li>
 </div>
+
 <div class="grid gap">
    <div class="col-xs-12 col-md-4">$userdata</div>
    <div class="col-xs-12 col-md-8">
-      <div class="card soft">
+      <div class="card soft white">
          <form method="post" action="{$_SERVER['PHP_SELF']}?id=$id&crud=$createorupdate">
             <h2>$addoredit User</h2>
             <div class="form-control">
@@ -180,7 +178,7 @@ HTML;
          } else {
 
          ?>
-         <div class="card soft">
+         <div class="card soft white">
          <h2>User List</h2>
 
          <ul>

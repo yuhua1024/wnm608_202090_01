@@ -9,4 +9,4 @@
 <link href="https://fonts.font.im/css?family=Open+Sans|Playfair+Display" rel="stylesheet">
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
+<script src="js/store.js"></script>

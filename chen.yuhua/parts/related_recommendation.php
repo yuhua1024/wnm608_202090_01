@@ -9,7 +9,7 @@
                MYSQLIQuery("
                   SELECT *
                   FROM products
-                  ORDER BY sales_volume DESC
+                  ORDER BY rand()
                   LIMIT 4
                "),
                'makeProductList'

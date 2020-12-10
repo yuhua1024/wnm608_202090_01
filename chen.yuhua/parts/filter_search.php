@@ -1,8 +1,19 @@
 		<div class="container">
 			<div class="card display-flex grid gap">
 
+					<div class="col-sm-6 col-md-6 col-lg-2">
+						<form action="product_list.php" method="get">
+							<?
+			                makeHiddenValues($_GET,[
+			                   
+			                   "t"=>"products_all"
+			                ]);
+			                ?>
+			                <input type="submit" value="All Products" class="button04" style="width: 100%;">
+			            </form>
+					</div>
 				
-					<div class="col-sm-6 col-md-6 col-lg-3">
+					<div class="col-sm-6 col-md-6 col-lg-2">
 						<form action="product_list.php" method="get">
 							<?
 			                makeHiddenValues($_GET,[
@@ -14,19 +25,19 @@
 			            </form>
 					</div>
 
-					<div class="col-sm-6 col-md-6 col-lg-3">
+					<div class="col-sm-6 col-md-6 col-lg-2">
 						<form action="product_list.php" method="get">
 							<?
 			                makeHiddenValues($_GET,[
-			                   "category"=>"Grapic",
+			                   "category"=>"Graphic",
 			                   "t"=>"products_by_category"
 			                ]);
 			                ?>
-			                <input type="submit" value="Grapic" class="button04" style="width: 100%;">
+			                <input type="submit" value="Graphic" class="button04" style="width: 100%;">
 			            </form>
 					</div>
 
-					<div class="col-sm-6 col-md-6 col-lg-3">
+					<div class="col-sm-6 col-md-6 col-lg-2">
 						<form action="product_list.php" method="get">
 							<?
 			                makeHiddenValues($_GET,[
@@ -38,7 +49,7 @@
 			            </form>
 					</div>
 
-					<div class="col-sm-6 col-md-6 col-lg-3">
+					<div class="col-sm-6 col-md-6 col-lg-2">
 						<form action="product_list.php" method="get">
 							<?
 			                makeHiddenValues($_GET,[

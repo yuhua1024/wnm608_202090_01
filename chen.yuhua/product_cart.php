@@ -32,9 +32,9 @@ $cart = getCartItems();
 
 		</div>
 
-		<div class="card display-flex grid gap" >
+		<div class="card" >
 			
-			</div>
+			<div>
                <?= cartTotals() ?>
             </div>
 		</div>

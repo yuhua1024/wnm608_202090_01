@@ -1,7 +1,8 @@
+<? include_once "lib/php/functions.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Store</title>
+	<title>About Us</title>
 
 	<?php include "parts/meta.php" ?>
 

@@ -48,10 +48,10 @@ $product = MYSQLIQuery("SELECT * FROM products WHERE id = {$_GET['id']}")[0];
               <label for="product-color">Color</label>
               <div class="form-select-light">
                 <select name="product-color" id="product-color">
-                  <option value="color1">#1</option>
-                  <option value="color2">#2</option>
-                  <option value="color3">#3</option>
-                  <option value="color4">#4</option>
+                  <option value="#01">Color01</option>
+                  <option value="#02">Color02</option>
+                  <option value="#03">Color03</option>
+                  <option value="#04">Color04</option>
                 </select>
               </div>
             </div>

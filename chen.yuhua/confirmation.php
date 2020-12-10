@@ -1,7 +1,7 @@
 <?php
 
 include_once "lib/php/functions.php";
-
+resetCart();
 
 function makeProductList($r,$o) {
 return $r.<<<HTML

@@ -8,7 +8,7 @@ setDefault('s','');
 setDefault('t','products_all');
 setDefault('orderby_direction','DESC');
 setDefault('orderby','sales_volume');
-setDefault('limit','16');
+setDefault('limit','12');
 
 
 
@@ -78,8 +78,13 @@ HTML;
 
 	<?php include "parts/product_list.php" ?>
 
+	<div class="container">
+      <div class="card soft medium">
+         <a href="admin">Product Admin</a>
+      </div>
+   </div>
+
 	<?php include "parts/footer.php" ?>
 
-<script src="js/store.js"></script>
 </body>
 </html>

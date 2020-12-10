@@ -37,12 +37,17 @@ function MYSQLIQuery($sql) {
    $result = $conn->query($sql);
    if($conn->errno) die($conn->error);
 
-   while($row = $result->fetch_object())
-      $a[] = $row;
+   // print_p([$conn,$result]);
+   // die;
+
+   if(@$result->num_rows) {
+      while($row = $result->fetch_object())
+         $a[] = $row;
+   }
+   if(@$conn->insert_id) return $conn->insert_id;
 
    return $a;
 }
-
 
 
 
@@ -69,17 +74,18 @@ function cartItemById($id) {
    return array_find(getCart(),function($o)use($id){ return $o->id==$id; });
 }
 
-function addToCart($id,$amount) {
+function addToCart($post) {
    //resetCart();
    $cart = getCart();
 
-   $p = array_find($cart,function($o)use($id){ return $o->id==$id; });
+   $p = array_find($cart,function($o)use($post){ return $o->id==$post['product-id']; });
 
-   if($p) $p->amount += $amount;
+   if($p) $p->amount += $post['product-amount'];
    else {
       $cart[] = (object)[
-         "id"=>$id,
-         "amount"=>$amount
+         "id"=>$post['product-id'],
+         "amount"=>$post['product-amount'],
+         "color"=>$post['product-color']
       ];
    }
 
@@ -114,6 +120,7 @@ function getCartItems() {
    return array_map(function($o) use ($cart){
       $p = cartItemById($o->id);
       $o->amount = $p->amount;
+      $o->chosen_color = $p->color;
       $o->total = $p->amount * $o->price;
       return $o;
    },$products);
@@ -129,6 +136,7 @@ function makeCartBadge() {
       return array_reduce($cart,function($r,$o){return $r+$o->amount;});
    }
 }
+
 
 function setDefault($k,$v) {
    if(!isset($_GET[$k])) $_GET[$k] = $v;

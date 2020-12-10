@@ -10,7 +10,7 @@ function getRequires($props) {
 }
 
 
-function makeStatement($type) {
+function makeStatement($type,$params=[]) {
 
    switch($type) {
       case "products_all":
@@ -84,6 +84,65 @@ function makeStatement($type) {
             LIMIT {$_GET['limit']}
             ");
          break;
+
+
+      case "product_insert":
+         return MYSQLIQuery("INSERT INTO
+            `products`
+            (
+               `name`,
+               `price`,
+               `category`,
+               `description`,
+               `image_other`,
+               `image_thumb`,
+               `date_create`,
+               `date_modify`
+            )
+            VALUES
+            (
+               '{$params[0]}',
+               '{$params[1]}',
+               '{$params[2]}',
+               '{$params[3]}',
+               '{$params[4]}',
+               '{$params[5]}',
+               NOW(),
+               NOW()
+            )
+            ");
+         break;
+
+      case "product_update":
+         return MYSQLIQuery("UPDATE
+            `products`
+            SET
+               `name` = '{$params[0]}',
+               `price` = '{$params[1]}',
+               `category` = '{$params[2]}',
+               `description` = '{$params[3]}',
+               `image_other` = '{$params[4]}',
+               `image_thumb` = '{$params[5]}'
+            WHERE `id` = {$params[6]}
+            ");
+         break;
+
+      case "product_delete":
+         return MYSQLIQuery("DELETE FROM
+            `products` WHERE `id` = {$params[0]}
+            ");
+         break;
+
+
+
+      case "products_admin_all":
+         return MYSQLIQuery("SELECT *
+            FROM `products`
+            ORDER BY `date_create` DESC
+            ");
+         break;
+
+
 
 
 

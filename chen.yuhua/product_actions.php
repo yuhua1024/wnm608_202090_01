@@ -6,7 +6,7 @@ switch($_GET['action']) {
    case "add-to-cart":
       print_p([$_GET,$_POST,$_SESSION]); 
       //$product = MYSQLIQuery("SELECT * FROM `products` WHERE `id` = ".$_POST['product-id'])[0];
-      addToCart($_POST['product-id'],$_POST['product-amount']);
+      addToCart($_POST);
       header("location:product_added_to_cart.php?id={$_POST['product-id']}");
       break;
 
