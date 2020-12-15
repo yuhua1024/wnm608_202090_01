@@ -92,21 +92,7 @@ function addToCart($post) {
    setCart($cart);
 }
 
-function purchaseNow() {
-   
-   $cart = getCart();
 
-   $ids = implode(",",array_map(function($o){return $o->id;},$cart));
-
-   $products = MYSQLIQuery("SELECT * FROM products WHERE id in ($ids)");
-
-   return array_map(function($o) use ($cart){
-      $p = cartItemById($o->id);
-      $o->amount = $p->amount;
-      $o->total = $p->amount * $o->price;
-      return $o;
-   },$products);
-}
 
 function getCartItems() {
    $cart = getCart();

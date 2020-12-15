@@ -79,7 +79,7 @@ HTML;
 	<?php include "parts/product_list.php" ?>
 
 	<div class="container">
-      <div class="card soft medium">
+      <div class="card soft white">
          <a href="admin">Product Admin</a>
       </div>
    </div>

@@ -76,13 +76,13 @@ a:hover{
 
 .nav ul{
 	list-style-type: none;
-	margin-top: 0;
-	margin-bottom: 0;
+	margin-top: 6px;
+	margin-bottom: 6px;
 	margin-left: 0;
 }
 
 	.nav a{
-		display: block;
+		display: inline;
 		padding: 0.2em 0.5em;
 	}
 
@@ -134,8 +134,7 @@ a:hover{
 	overflow: hidden;
 	background-size: cover;
 	background-position: center;
-	background-attachment: fixed;
-
+	background-attachment:fixed;
 	height: 80vh;
 }
 

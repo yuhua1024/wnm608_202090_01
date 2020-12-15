@@ -114,18 +114,22 @@ HTML;
 
 function makeAdminList($r,$o) {
 return $r.<<<HTML
-<div class="display-flex card white flat soft">
-   <div class="flex-none image-thumbs-admin">
+<div class="grid gap display-flex card white flat soft">
+   <div class="col-lg-2 col-sm-5 image-thumbs-admin">
       <img src="img/store/$o->image_thumb">
    </div>
-   <div class="flex-stretch" style="padding:1em">
-      <div><strong>$o->name</strong></div>
+
+   <div class="col-lg-7 col-sm-7" style="padding:1em">
+      <div><h3>$o->name</h3></div>
       <div>$o->category</div>
+      <div>Price:&dollar;$o->price</div>
    </div>
-   <div class="flex-none">
+
+   <div class="col-lg-3 col-sm-12" style="align-items: center; display: inherit;">
       <div class="card-section"><a href="admin/?id=$o->id" class="form-button">Edit</a></div>
       <div class="card-section"><a href="product_item.php?id=$o->id" class="form-button">View</a></div>
    </div>
+
 </div>
 HTML;
 }

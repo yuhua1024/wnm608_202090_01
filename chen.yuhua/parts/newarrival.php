@@ -16,7 +16,7 @@
 
         ?>
 
-        <a href="product_list.php" class="col-sm-12" style="text-align: right;margin-right: 15px;font-size:larger;">See More >>></a>
+        <a href="product_list.php" class="col-sm-12" style="text-align: right;margin-right: 15px;">See More >>></a>
 
 	</div>
 </div>

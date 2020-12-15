@@ -81,7 +81,7 @@ $addoredit = $id=='new' ? 'Add' : 'Edit';
 $createorupdate = $id=='new' ? 'create' : 'update';
 
 $productdata = $id=='new' ? '' : <<<HTML
-<div class="card soft white">
+<div class="">
    <div class="display-flex">
       <h2 class="flex-stretch">$product->name</h2>
       <div>
@@ -111,15 +111,15 @@ $productdata = $id=='new' ? '' : <<<HTML
 HTML;
 
 echo <<<HTML
-<div class="card soft white">
+<div class="card" style="padding-left: 0;padding-bottom: 0;">
 <nav class="nav crumbs">
-   <ul>
-      <li><a href="{$_SERVER['PHP_SELF']}">Back</a></li>
+   <ul style="padding: 0;">
+      <li><a href="{$_SERVER['PHP_SELF']}">< Back</a></li>
    </ul>
 </nav>
 </div>
 <div class="grid gap">
-   <div class="col-xs-12 col-md-4">$productdata</div>
+   <div class="col-xs-12 col-md-4 card soft white">$productdata</div>
    <div class="col-xs-12 col-md-8">
       <div class="card soft white">
          <form method="post" action="{$_SERVER['PHP_SELF']}?id=$id&crud=$createorupdate">
@@ -178,7 +178,7 @@ HTML;
          </div>
          <div class="flex-stretch"></div>
          <!-- nav.nav.flex-none>ul>li>a[href=#]>{List} -->
-         <nav class="nav flex-none">
+         <nav class="nav flex-none pills">
             <ul class="display-flex">
                <li><a href="product_list.php">Store</a></li>
                <li><a href="<?= $_SERVER['PHP_SELF'] ?>">List</a></li>
@@ -207,7 +207,7 @@ HTML;
          } else {
 
          ?>
-         <div class="card medium soft">
+         <div class="card">
          <h2>Product List</h2>
 
          <div>

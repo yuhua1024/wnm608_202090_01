@@ -10,16 +10,14 @@
 <body>
 
 	<?php include "parts/navbar.php" ?>
-
 	
 	<div class="container">
+	
 		<div class="card soft white">
-			<h2>This is a heading 2</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ipsum similique culpa beatae iste nostrum fugiat itaque et voluptate. Quo, alias accusantium. Saepe dignissimos architecto, maiores. Dicta laudantium illum quasi explicabo ut a debitis labore fugit neque alias qui dolorum dignissimos provident nam, dolore maiores in deserunt voluptatibus quod! Aliquam.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, exercitationem. In quo, eius porro aliquam, tempore magni maiores. Sunt vero rerum dolores quasi velit accusamus molestias voluptatem fugit a ex esse alias incidunt natus dolore nesciunt corrupti, voluptas nemo, commodi. Magnam, consequuntur maiores iure consectetur a corporis aperiam cupiditate non, at, doloremque quasi omnis itaque adipisci quam quo nostrum aspernatur commodi ducimus necessitatibus sint dolor corrupti ipsam qui. Et facere provident optio recusandae, reprehenderit id. Rem delectus maxime molestias eos.</p>
-			<br>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ipsum similique culpa beatae iste nostrum fugiat itaque et voluptate. Quo, alias accusantium. Saepe dignissimos architecto, maiores. Dicta laudantium illum quasi explicabo ut a debitis labore fugit neque alias qui dolorum dignissimos provident nam, dolore maiores in deserunt voluptatibus quod! Aliquam.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, exercitationem. In quo, eius porro aliquam, tempore magni maiores. Sunt vero rerum dolores quasi velit accusamus molestias voluptatem fugit a ex esse alias incidunt natus dolore nesciunt corrupti, voluptas nemo, commodi. Magnam, consequuntur maiores iure consectetur a corporis aperiam cupiditate non, at, doloremque quasi omnis itaque adipisci quam quo nostrum aspernatur commodi ducimus necessitatibus sint dolor corrupti ipsam qui. Et facere provident optio recusandae, reprehenderit id. Rem delectus maxime molestias eos.</p>
+			<h2>About AURORA POSTCARDS</h2>
+		
+			<div class="view-window" style="background-image: url(img/postcards_002.jpg);"></div>
+			<p>This is a website selling many kinds of postcards. Some of the postcards are photography, some are illustrated, and some are collage. The photography and collage are created by myself. We provides customers the opportunity to choose postcards entirely on your own preferences, not necessarily in sets, although they are in sets originally.</p>
 		</div>
 	</div>
 
