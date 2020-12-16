@@ -91,19 +91,19 @@ $productdata = $id=='new' ? '' : <<<HTML
       </div>
    </div>
    <div>
-      <strong>Category</strong>
+      <strong>Category:</strong>
       <span>$product->category</span>
    </div>
    <div>
-      <strong>Price</strong>
+      <strong>Price:</strong>
       <span>&dollar;$product->price</span>
    </div>
    <div>
-      <strong>Description</strong>
+      <strong>Description:</strong>
       <span>$product->description</span>
    </div>
    <div>
-      <strong>Images</strong>
+      <strong>Images:</strong>
       <div class="image-thumbs"><img src='img/store/$product->image_thumb'></div>
       <div class="image-thumbs">$thumbs_elements</div>
    </div>

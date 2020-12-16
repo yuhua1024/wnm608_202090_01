@@ -265,14 +265,12 @@ a:hover{
 	.btn.purchase{
 		background-color: var(--color-purchase);
 		color: var(--color-white);
-		margin-left:1em; 
 		margin-top: 2em;
 	}
 	.btn.addtocart{
 		background-color: var(--color-white);
 		border: 1px solid var(--color-purchase);
 		color: var(--color-purchase);
-		margin-right: 1em;
 		margin-top: 2em;
 	}
 

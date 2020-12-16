@@ -458,6 +458,10 @@ span.badge:not(:empty)::before {
 	select{
 		font-size: 0.9em;
 	}
+
+	.tab{
+		font-size: 0.9em;
+	}
 	
 	.view-window{
 	position:relative;
