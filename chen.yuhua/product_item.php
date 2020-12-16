@@ -46,6 +46,13 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
 	<?php include "parts/navbar.php" ?>
 
 	<div class="container">
+
+		<nav class="nav crumbs">
+		   <ul style="padding-top: 1em; padding-left: 0;">
+		      <li><a href="product_list.php">< Back</a></li>
+		   </ul>
+		</nav>
+
 		<div class="card soft white ">
 
 			<?php include "parts/product_item_title.php" ?>

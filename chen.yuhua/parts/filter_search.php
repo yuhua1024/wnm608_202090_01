@@ -73,7 +73,7 @@
 		                ?>
 						
 		                <div class="form-select filter01 display-flex">
-		                	<p style="width: 88px; height: 6px; position: relative;bottom: 9px;">Sort by:</p>
+		                	<p class="sortby">Sort by:</p>
 		                    <select onchange="checkSort(this)">
 		                        <?=makeSortOptions()?>
 		                    </select>

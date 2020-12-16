@@ -437,7 +437,12 @@ span.badge:not(:empty)::before {
 	margin: 1em;
 }
 
-
+.sortby{
+	width: 88px;
+    height: 6px;
+    position: relative;
+    bottom: 9px;
+}
 
 
 
@@ -462,10 +467,22 @@ span.badge:not(:empty)::before {
 	background-attachment:inherit;
 	height: 80vw;
 	}
+
+	.sortby{
+	width: 88px;
+    height: 6px;
+    position: relative;
+    bottom: 4px;
+	}
 }
 
 
 }
+
+
+
+
+
 
 
 

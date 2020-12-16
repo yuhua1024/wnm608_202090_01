@@ -11,12 +11,12 @@ $products = makeStatement("products_admin_all",[]);
 
 
 $empty_product = (object)[
-   "title"=>"",
-   "price"=>"",
-   "category"=>"",
-   "description"=>"",
-   "image_other"=>"",
-   "image_thumb"=>""
+   "name"=>"FLowers",
+   "price"=>"1.20",
+   "category"=>"Photograph",
+   "description"=>"The flowers photographed on film.",
+   "image_other"=>"flowers.jpg,flowers_1.jpg,flowers_2.jpg,flowers_3.jpg",
+   "image_thumb"=>"flowers.jpg"
 ];
 
 
