@@ -55,9 +55,10 @@ return $r.<<<HTML
 				<div class="product-title">$o->name</div>
 				<div class="product-price">&dollar;$o->price/piece</div>
 			</figcaption>
+          <a class="button04">Shop Now</a>
 		</figure>
 	</a>
-   <div class="button04">Shop Now</div>
+
 </div>
 HTML;
 }
