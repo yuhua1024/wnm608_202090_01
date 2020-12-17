@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主机： localhost:3306
--- 生成日期： 2020-12-16 04:20:45
+-- 生成日期： 2020-12-16 17:52:10
 -- 服务器版本： 5.6.49-cll-lve
 -- PHP 版本： 7.3.6
 
@@ -59,7 +59,7 @@ INSERT INTO `products` (`id`, `name`, `price`, `date_create`, `date_modify`, `ca
 (10, 'Valentine\'s Day', 1.08, '2020-11-09 13:22:56', '2020-11-09 13:22:56', 'Illustration', 'valentine_day.jpg', 'valentine_day.jpg,valentine_day_1.jpg,valentine_day_2.jpg,valentine_day_3.jpg,valentine_day_4.jpg', 'valentine_day.jpg', 'ShurAn’s illustration for Valentine’s Day.', '28'),
 (11, 'Merry Christmas', 1.08, '2020-11-09 13:23:48', '2020-11-09 13:23:48', 'Illustration', 'merry_christmas.jpg', 'merry_christmas.jpg,merry_christmas_1.jpg,merry_christmas_2.jpg,merry_christmas_3.jpg,merry_christmas_4.jpg', 'merry_christmas.jpg', 'ShurAn’s illustration for Christmas.', '22'),
 (12, 'Our Little World', 1.08, '2020-11-09 13:42:46', '2020-11-17 13:24:46', 'Illustration', 'little_world.jpg', 'little_world.jpg,little_world_1.jpg,little_world_2.jpg,little_world_3.jpg,little_world_4.jpg', 'little_world.jpg', 'ShurAn’s illustration by artistic oil painting stick.', '29'),
-(20, 'FLowers', 1.20, '2020-12-15 21:42:47', '2020-12-15 21:42:47', 'Photograph', '', 'flowers.jpg,flowers_1.jpg,flowers_2.jpg,flowers_3.jpg', 'flowers.jpg', 'The flowers photographed on film.', '');
+(24, 'Flowers', 1.20, '2020-12-17 08:50:59', '2020-12-17 08:50:59', 'Photograph', 'flowers.jpg', 'flowers.jpg,flowers_1.jpg,flowers_2.jpg,flowers_3.jpg', 'flowers.jpg', 'The flowers photographed on film.', '');
 
 --
 -- 转储表的索引
@@ -79,7 +79,7 @@ ALTER TABLE `products`
 -- 使用表AUTO_INCREMENT `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -11,7 +11,7 @@ $products = makeStatement("products_admin_all",[]);
 
 
 $empty_product = (object)[
-   "name"=>"FLowers",
+   "name"=>"Flowers",
    "price"=>"1.20",
    "category"=>"Photograph",
    "description"=>"The flowers photographed on film.",
