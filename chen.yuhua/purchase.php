@@ -35,7 +35,7 @@ $cart = getCartItems();
 
 		<?php include "parts/purchase_infor.php" ?>
 
-		<a href="product_actions.php?action=reset-cart"><div class="btn purchase">Present Order</div></a>
+		<a href="product_actions.php?action=reset-cart"><div class="btn purchase">Submit Order</div></a>
 
 	</div>
 

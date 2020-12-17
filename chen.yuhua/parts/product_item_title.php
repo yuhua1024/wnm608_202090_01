@@ -59,7 +59,7 @@ $product = MYSQLIQuery("SELECT * FROM products WHERE id = {$_GET['id']}")[0];
           </div>
 
 				<div class="card-section display-flex">
-					<input type="submit" class="btn addtocart" value="Add To Cart">
+					<input type="submit" class="btn purchase" value="Add To Cart">
 				</div>
 				
 			</form>
